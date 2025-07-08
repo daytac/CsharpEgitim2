@@ -14,5 +14,7 @@ namespace CsharpEgitim2.EntityLayer.Concrete
         public string CustomerDistric {  get; set; }    
         public string CustomerCity {  get; set; }   
         public List<Order> Orders { get; set;}
+        public bool CustomerStatus {  get; set; }   
+
     }
 }
