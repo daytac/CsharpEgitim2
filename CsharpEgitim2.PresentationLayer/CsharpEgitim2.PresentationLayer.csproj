@@ -95,6 +95,14 @@
       <Project>{933bf770-1fad-4882-bb92-523e161578c8}</Project>
       <Name>CsharpEgitim2.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CsharpEgitim2.DataAccessLayer\CsharpEgitim2.DataAccessLayer.csproj">
+      <Project>{6D60A10A-9B48-4840-92A1-B2310B169F71}</Project>
+      <Name>CsharpEgitim2.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CsharpEgitim2.EntityLayer\CsharpEgitim2.EntityLayer.csproj">
+      <Project>{62295965-80E3-421E-9887-F0CE6517D03B}</Project>
+      <Name>CsharpEgitim2.EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

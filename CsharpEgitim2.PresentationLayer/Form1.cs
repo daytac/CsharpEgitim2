@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CsharpEgitim2.BusinessLayer.Abstract;
+using CsharpEgitim2.BusinessLayer.Concrete;
+using CsharpEgitim2.DataAccessLayer.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,18 @@ namespace CsharpEgitim2.PresentationLayer
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private readonly ICategoryService _categoryService; 
+
+        public Form1 ()
         {
+            _categoryService = new CategoryManager(new EfCategoryDal());
             InitializeComponent();
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            var categoryValues = _categoryService.TGetAll();
+            dataGridView1.DataSource=categoryValues;    
         }
     }
 }

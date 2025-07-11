@@ -51,5 +51,6 @@ namespace CsharpEgitim2.DataAccessLayer.Repositories
         }
 
 
+
     }
 }
