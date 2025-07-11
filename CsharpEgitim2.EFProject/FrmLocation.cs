@@ -35,7 +35,7 @@ namespace CsharpEgitim2.EFProject
             updateValue.Country=txtCountry.Text;    
             updateValue.GuideId=int.Parse(cbGuide.SelectedValue.ToString());
             db.SaveChanges();
-            MessageBox.Show("Ekleme işlemi başarılı");
+            MessageBox.Show("Güncelleme işlemi başarılı");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
