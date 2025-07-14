@@ -9,6 +9,7 @@ namespace CsharpEgitim2.DataAccessLayer.Abstract
 {
     public interface IProductDal : IGenericDal<Product>
     {
+        List<object> GetProductsWithCategory();
 
     }
 }

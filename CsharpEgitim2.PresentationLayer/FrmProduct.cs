@@ -13,20 +13,26 @@ using System.Windows.Forms;
 
 namespace CsharpEgitim2.PresentationLayer
 {
-    public partial class Form1 : Form
+    public partial class FrmProduct : Form
     {
-        private readonly ICategoryService _categoryService; 
 
-        public Form1 ()
+        private readonly IProductService _productService;
+        public FrmProduct()
         {
-            _categoryService = new CategoryManager(new EfCategoryDal());
             InitializeComponent();
+            _productService=new ProductManager(new EfPRoductDal());
         }
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            var categoryValues = _categoryService.TGetAll();
-            dataGridView1.DataSource=categoryValues;    
+            var values = _productService.TGetAll();
+            dataGridView1.DataSource=values; 
+        }
+
+        private void btnList2_Click(object sender, EventArgs e)
+        {
+            var values = _productService.GetProductsWithCategory();
+            dataGridView1.DataSource=values;    
         }
     }
 }
