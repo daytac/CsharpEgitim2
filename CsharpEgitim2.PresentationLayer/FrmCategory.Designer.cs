@@ -166,7 +166,7 @@
             this.btnGetById.Text = "Idye göre getir";
             this.btnGetById.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,8 +184,8 @@
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmCategory";
+            this.Text = "FrmCategory";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
